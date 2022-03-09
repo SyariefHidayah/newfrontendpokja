@@ -253,10 +253,10 @@ License: For each use you must have a valid license purchased only from above li
 										<div class="menu-sub menu-sub-accordion menu-active-bg">
 											<div class="menu-item">
 												<a class="menu-link" href="../../demo14/dist/index.html">
-													<span class="menu-bullet">
+													<span class="menu-bullet ">
 														<span class="bullet bullet-dot"></span>
 													</span>
-													<span class="menu-title">Daftar RUP</span>
+													<span class="menu-title ">Daftar RUP</span>
 												</a>
 											</div>
 										</div>
@@ -468,6 +468,11 @@ License: For each use you must have a valid license purchased only from above li
 										<!--end::card header-->
 										<!--begin::card body-->
 										<div class="card-body ">
+											<div class="col-2 align-items-end"><a href="#"
+													class="btn btn-success btn-hover-rise bg-dark"><i
+														class="bi bi-plus-circle-dotted"></i>
+													Tambah Usulan</a></div>
+
 											<div class="row border-1 rounded  py-4" style="padding:10px;">
 												<div class="table-responsive shadow-lg rounded">
 													<table id="daftarusulanpokja"
@@ -623,10 +628,7 @@ License: For each use you must have a valid license purchased only from above li
 														</tbody>
 													</table>
 												</div>
-
 											</div>
-
-
 										</div>
 										<!--end::end card body-->
 									</div>
@@ -705,6 +707,16 @@ License: For each use you must have a valid license purchased only from above li
 	<script>$(document).ready(function () {
 			$('#daftarusulanpokja').DataTable({
 				"columnDefs": [
+				]
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			$('#example').DataTable({
+				dom: 'Bfrtip',
+				buttons: [
+					'print'
 				]
 			});
 		});
