@@ -662,154 +662,230 @@ License: For each use you must have a valid license purchased only from above li
 													</div>
 												</div>
 												<!--end::Input group-->
-												<div class="separator border-primary my-10"></div>
-												<!--begin::Form group-->
-												<div data-repeater-list="kt_ecommerce_add_category_conditions">
-													<div data-repeater-item="" class="row">
-														<!--begin::Select2-->
-														<div class="row">
-															<h3>Anggota Kelompok Kerja</h3>
+												<div class="separator border-dark my-10"></div>
+
+												<div class="row">
+													<div class="row">
+														<h3>Anggota Kelompok Kerja</h3>
+													</div>
+													<div class="separator separator-dashed border-dark"></div>
+													<!--begin::Input group-->
+													<div class="row row-cols-2 g-4">
+														<div class="col">
+															<!--begin::Label-->
+															<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+																<span class="required">Nama </span>
+															</label>
+															<!--end::Label-->
+															<!--begin::Input-->
+															<input type="text" class="form-control form-control-solid"
+																placeholder="Masukan Nama" name="nama_ketua" required />
+															<!--end::Input-->
 														</div>
-														<div class="separator separator-dashed border-dark"></div>
+														<!--end::Input group-->
 														<!--begin::Input group-->
-														<div class="row row-cols-2 g-4">
-															<div class="col">
-																<!--begin::Label-->
-																<label
-																	class="d-flex align-items-center fs-6 fw-bold mb-2">
-																	<span class="required">Nama </span>
-																</label>
-																<!--end::Label-->
-																<!--begin::Input-->
-																<input type="text"
-																	class="form-control form-control-solid"
-																	placeholder="Masukan Nama" name="nama_ketua"
-																	required />
-																<!--end::Input-->
-															</div>
-															<!--end::Input group-->
-															<!--begin::Input group-->
-															<div class="col">
-																<!--begin::Label-->
-																<label
-																	class="d-flex align-items-center fs-6 fw-bold mb-2">
-																	<span class="required">Satuan Kerja</span>
-																</label>
-																<!--end::Label-->
-																<!--begin::Input-->
-																<input type="text"
-																	class="form-control form-control-solid"
-																	placeholder="Masukan Satuan Kerja"
-																	name="satuan_kerja" required />
-																<!--end::Input-->
-															</div>
-															<!--begin::Input group-->
-															<div class="col">
-																<!--begin::Label-->
-																<label
-																	class="d-flex align-items-center fs-6 fw-bold mb-2">
-																	<span class="required">NIP</span>
-																</label>
-																<!--end::Label-->
-																<!--begin::Input-->
-																<input type="text"
-																	class="form-control form-control-solid"
-																	placeholder="Masukan NIP" name="nip" required />
-																<!--end::Input-->
-															</div>
-															<!--end::Input group-->
-															<!--begin::Input group-->
-															<div class="col">
-																<!--begin::Label-->
-																<label
-																	class="d-flex align-items-center fs-6 fw-bold mb-2">
-																	<span class="required">Jabatan</span>
-																</label>
-																<!--end::Label-->
-																<!--begin::Input-->
-																<input type="text"
-																	class="form-control form-control-solid"
-																	placeholder="Masukan Jabatan" name="jabatan"
-																	required />
-																<!--end::Input-->
-															</div>
-															<!--end::Input group-->
-															<!--begin::Input group-->
-															<div class="col">
-																<label for="formFile" class="form-label">Upload
-																	Sertifikat
-																	Pengadaan
-																	Barang
-																	dan Jasa</label>
-																<input class="form-control" type="file" id="formFile">
-															</div>
-															<!--end::Input group-->
-															<!--begin::Input group-->
-															<div class="col py-8">
-																<button type="button" data-repeater-delete=""
-																	class="btn btn-lg  btn-light-danger">
-																	<!--begin::Svg Icon | path: icons/duotune/arrows/arr088.svg-->
-																	<span class="svg-icon svg-icon-2">
-																		<svg xmlns="http://www.w3.org/2000/svg"
-																			width="24" height="24" viewBox="0 0 24 24"
-																			fill="none">
-																			<rect opacity="0.5" x="7.05025" y="15.5356"
-																				width="12" height="2" rx="1"
-																				transform="rotate(-45 7.05025 15.5356)"
-																				fill="black" />
-																			<rect x="8.46447" y="7.05029" width="12"
-																				height="2" rx="1"
-																				transform="rotate(45 8.46447 7.05029)"
-																				fill="black" />
-																		</svg>
-																	</span>
-																	<!--end::Svg Icon-->Hapus Anggota Kerja
-																</button>
-																<!--end::Button-->
-															</div>
-															<!--end::Input group-->
+														<div class="col">
+															<!--begin::Label-->
+															<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+																<span class="required">Satuan Kerja</span>
+															</label>
+															<!--end::Label-->
+															<!--begin::Input-->
+															<input type="text" class="form-control form-control-solid"
+																placeholder="Masukan Satuan Kerja" name="satuan_kerja"
+																required />
+															<!--end::Input-->
+														</div>
+														<!--begin::Input group-->
+														<div class="col">
+															<!--begin::Label-->
+															<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+																<span class="required">NIP</span>
+															</label>
+															<!--end::Label-->
+															<!--begin::Input-->
+															<input type="text" class="form-control form-control-solid"
+																placeholder="Masukan NIP" name="nip" required />
+															<!--end::Input-->
+														</div>
+														<!--end::Input group-->
+														<!--begin::Input group-->
+														<div class="col">
+															<!--begin::Label-->
+															<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+																<span class="required">Jabatan</span>
+															</label>
+															<!--end::Label-->
+															<!--begin::Input-->
+															<input type="text" class="form-control form-control-solid"
+																placeholder="Masukan Jabatan" name="jabatan" required />
+															<!--end::Input-->
+														</div>
+														<!--end::Input group-->
+														<!--begin::Input group-->
+														<div class="col">
+															<label for="formFile" class="form-label">Upload
+																Sertifikat
+																Pengadaan
+																Barang
+																dan Jasa</label>
+															<input class="form-control" type="file" id="formFile">
 														</div>
 													</div>
+
+													<div class="separator border-dark my-10"></div>
+													<!--begin::Form group-->
+													<div data-repeater-list="kt_ecommerce_add_category_conditions">
+														<div data-repeater-item="" class="row">
+															<!--begin::Select2-->
+															<div class="row">
+																<h3>Anggota Kelompok Kerja</h3>
+															</div>
+															<div class="separator separator-dashed border-dark"></div>
+															<!--begin::Input group-->
+															<div class="row row-cols-2 g-4">
+																<div class="col">
+																	<!--begin::Label-->
+																	<label
+																		class="d-flex align-items-center fs-6 fw-bold mb-2">
+																		<span class="required">Nama </span>
+																	</label>
+																	<!--end::Label-->
+																	<!--begin::Input-->
+																	<input type="text"
+																		class="form-control form-control-solid"
+																		placeholder="Masukan Nama" name="nama_ketua"
+																		required />
+																	<!--end::Input-->
+																</div>
+																<!--end::Input group-->
+																<!--begin::Input group-->
+																<div class="col">
+																	<!--begin::Label-->
+																	<label
+																		class="d-flex align-items-center fs-6 fw-bold mb-2">
+																		<span class="required">Satuan Kerja</span>
+																	</label>
+																	<!--end::Label-->
+																	<!--begin::Input-->
+																	<input type="text"
+																		class="form-control form-control-solid"
+																		placeholder="Masukan Satuan Kerja"
+																		name="satuan_kerja" required />
+																	<!--end::Input-->
+																</div>
+																<!--begin::Input group-->
+																<div class="col">
+																	<!--begin::Label-->
+																	<label
+																		class="d-flex align-items-center fs-6 fw-bold mb-2">
+																		<span class="required">NIP</span>
+																	</label>
+																	<!--end::Label-->
+																	<!--begin::Input-->
+																	<input type="text"
+																		class="form-control form-control-solid"
+																		placeholder="Masukan NIP" name="nip" required />
+																	<!--end::Input-->
+																</div>
+																<!--end::Input group-->
+																<!--begin::Input group-->
+																<div class="col">
+																	<!--begin::Label-->
+																	<label
+																		class="d-flex align-items-center fs-6 fw-bold mb-2">
+																		<span class="required">Jabatan</span>
+																	</label>
+																	<!--end::Label-->
+																	<!--begin::Input-->
+																	<input type="text"
+																		class="form-control form-control-solid"
+																		placeholder="Masukan Jabatan" name="jabatan"
+																		required />
+																	<!--end::Input-->
+																</div>
+																<!--end::Input group-->
+																<!--begin::Input group-->
+																<div class="col">
+																	<label for="formFile" class="form-label">Upload
+																		Sertifikat
+																		Pengadaan
+																		Barang
+																		dan Jasa</label>
+																	<input class="form-control" type="file"
+																		id="formFile">
+																</div>
+
+																<!--end::Input group-->
+																<!--begin::Input group-->
+																<div class="col py-8">
+																	<button type="button" data-repeater-delete=""
+																		class="btn btn-lg  btn-light-danger">
+																		<!--begin::Svg Icon | path: icons/duotune/arrows/arr088.svg-->
+																		<span class="svg-icon svg-icon-2">
+																			<svg xmlns="http://www.w3.org/2000/svg"
+																				width="24" height="24"
+																				viewBox="0 0 24 24" fill="none">
+																				<rect opacity="0.5" x="7.05025"
+																					y="15.5356" width="12" height="2"
+																					rx="1"
+																					transform="rotate(-45 7.05025 15.5356)"
+																					fill="black" />
+																				<rect x="8.46447" y="7.05029" width="12"
+																					height="2" rx="1"
+																					transform="rotate(45 8.46447 7.05029)"
+																					fill="black" />
+																			</svg>
+																		</span>
+																		<!--end::Svg Icon-->Hapus Anggota Kerja
+																	</button>
+																	<!--end::Button-->
+																</div>
+																<!--end::Input group-->
+															</div>
+															<div class="separator border-dark my-10"></div>
+														</div>
+													</div>
+													<!--end::Form group-->
+													<!--begin::Form group-->
+													<div class="form-group mt-5">
+														<!--begin::Button-->
+														<button type="button" data-repeater-create=""
+															class="btn btn-lg btn-light-primary">
+															<!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
+															<span class="svg-icon svg-icon-2">
+																<svg xmlns="http://www.w3.org/2000/svg" width="24"
+																	height="24" viewBox="0 0 24 24" fill="none">
+																	<rect opacity="0.5" x="11" y="18" width="12"
+																		height="2" rx="1" transform="rotate(-90 11 18)"
+																		fill="black" />
+																	<rect x="6" y="11" width="12" height="2" rx="1"
+																		fill="black" />
+																</svg>
+															</span>
+															<!--end::Svg Icon-->Tambah Anggota Kerja
+														</button>
+														<!--end::Button-->
+													</div>
+													<!--end::Form group-->
 												</div>
-												<!--end::Form group-->
-												<!--begin::Form group-->
-												<div class="form-group mt-5">
-													<!--begin::Button-->
-													<button type="button" data-repeater-create=""
-														class="btn btn-lg btn-light-primary">
-														<!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-														<span class="svg-icon svg-icon-2">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24"
-																height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.5" x="11" y="18" width="12" height="2"
-																	rx="1" transform="rotate(-90 11 18)" fill="black" />
-																<rect x="6" y="11" width="12" height="2" rx="1"
-																	fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->Tambah Anggota Kerja
-													</button>
-													<!--end::Button-->
-												</div>
-												<!--end::Form group-->
+											</div>
+											<!--end::row-->
+										</div>
+										<!--end::row-->
+										<!--begin::row-->
+										<div class="row">
+											<div class="d-grid gap-2 d-md-block text-center">
+												<a href="#" class="btn btn-warning btn-hover-rise bg-secondary"><i
+														class="bi bi-x"></i>
+													Batal</a>
+												<a href="#" class="btn btn-success btn-hover-rise bg-dark"><i
+														class="bi bi-save2"></i>
+													Simpan</a>
 											</div>
 										</div>
 										<!--end::row-->
 									</div>
-									<!--end::row-->
-									<!--begin::row-->
-									<div class="row">
-										<div class="d-grid gap-2 d-md-block text-center">
-											<a href="#" class="btn btn-warning btn-hover-rise bg-secondary"><i
-													class="bi bi-x"></i>
-												Batal</a>
-											<a href="#" class="btn btn-success btn-hover-rise bg-dark"><i
-													class="bi bi-save2"></i>
-												Simpan</a>
-										</div>
-									</div>
-									<!--end::row-->
-								</div>
 							</form>
 						</div>
 
